@@ -1,0 +1,5 @@
+services:
+  postgres:
+    image: postgres:13.2-alpine
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
