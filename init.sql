@@ -1,7 +1,7 @@
 USE users;
 
 -- Create a table
-CREATE TABLE users (
+CREATE TABLE IF NOT EXISTS users (
     id INT SERIAL PRIMARY KEY,
     name VARCHAR(255),
     age INT,
