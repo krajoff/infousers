@@ -1,7 +1,8 @@
 version: '3.1'
 services:
   db:
-    image: user-db
+    image: postgres
+    container_name: users-db
     restart: always
     environment:
       POSTGRES_DB: users
